@@ -194,6 +194,7 @@ const Index = () => {
               { id: 'culture', label: 'Культура', icon: 'Palette' },
               { id: 'traditions', label: 'Традиции', icon: 'Sparkles' },
               { id: 'landmarks', label: 'Достопримечательности', icon: 'MapPin' },
+              { id: 'gallery', label: 'Галерея', icon: 'Images' },
             ].map((item) => (
               <button
                 key={item.id}
@@ -300,6 +301,30 @@ const Index = () => {
                       className="fill-muted/50 stroke-primary stroke-[0.5]"
                     />
                     
+                    <path 
+                      d="M 10,50 Q 30,55 50,48 T 90,52" 
+                      className="fill-none stroke-blue-400/60 stroke-[0.8]"
+                    />
+                    <text x="45" y="45" className="fill-blue-500 text-[2.5px] font-cormorant">р. Кама</text>
+                    
+                    <path 
+                      d="M 40,25 Q 45,40 48,55" 
+                      className="fill-none stroke-blue-400/60 stroke-[0.6]"
+                    />
+                    <text x="42" y="38" className="fill-blue-500 text-[2px] font-cormorant">Чепца</text>
+                    
+                    <circle cx="50" cy="50" r="1.5" className="fill-primary" />
+                    <text x="50" y="56" textAnchor="middle" className="fill-primary text-[3px] font-bold">Ижевск</text>
+                    
+                    <circle cx="70" cy="60" r="1" className="fill-primary/70" />
+                    <text x="70" y="64" textAnchor="middle" className="fill-primary text-[2.5px]">Воткинск</text>
+                    
+                    <circle cx="35" cy="30" r="1" className="fill-primary/70" />
+                    <text x="35" y="27" textAnchor="middle" className="fill-primary text-[2.5px]">Глазов</text>
+                    
+                    <circle cx="65" cy="65" r="1" className="fill-primary/70" />
+                    <text x="65" y="70" textAnchor="middle" className="fill-primary text-[2.5px]">Сарапул</text>
+                    
                     {landmarks.map((landmark, index) => (
                       <g key={index}>
                         <circle
@@ -380,6 +405,108 @@ const Index = () => {
                     </CardContent>
                   </Card>
                 ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeSection === 'gallery' && (
+          <div className="animate-fade-in">
+            <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-primary mb-8 text-center">
+              Фотогалерея достопримечательностей
+            </h2>
+            
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {landmarks.slice(0, 6).map((item, index) => (
+                  <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                    <div className="relative aspect-[4/3] bg-muted overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/30 flex items-center justify-center">
+                        <Icon name="Image" size={64} className="text-primary/30" />
+                      </div>
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
+                      <div className="absolute top-3 right-3 bg-accent text-accent-foreground px-3 py-1 rounded text-xs font-semibold">
+                        {item.type}
+                      </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="font-cormorant text-xl font-bold text-primary mb-2 line-clamp-2">
+                        {item.name}
+                      </h3>
+                      <p className="text-muted-foreground font-merriweather text-sm mb-3 flex items-center gap-2">
+                        <Icon name="MapPin" size={14} />
+                        {item.location}
+                      </p>
+                      <p className="text-foreground font-merriweather text-sm leading-relaxed line-clamp-3">
+                        {item.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              
+              <div className="mt-12 bg-card border-2 border-border rounded-lg p-8">
+                <h3 className="font-cormorant text-3xl font-bold text-primary mb-6 text-center">
+                  Исторические памятники
+                </h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                        <Icon name="Church" size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
+                          Церкви и храмы
+                        </h4>
+                        <p className="text-muted-foreground font-merriweather text-sm">
+                          Православные храмы XIX-XX веков, сочетающие русскую и местную архитектуру
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                        <Icon name="Castle" size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
+                          Древние городища
+                        </h4>
+                        <p className="text-muted-foreground font-merriweather text-sm">
+                          Археологические памятники средневековья, свидетели древней истории
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                        <Icon name="Home" size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
+                          Деревянное зодчество
+                        </h4>
+                        <p className="text-muted-foreground font-merriweather text-sm">
+                          Традиционные удмуртские усадьбы и постройки из дерева
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                        <Icon name="Trees" size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
+                          Природные памятники
+                        </h4>
+                        <p className="text-muted-foreground font-merriweather text-sm">
+                          Заповедники, национальные парки и уникальные ландшафты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
