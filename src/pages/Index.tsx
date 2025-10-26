@@ -378,9 +378,18 @@ const Index = () => {
                     </text>
                     
                     <defs>
-                      <pattern id="forest" patternUnits="userSpaceOnUse" width="3" height="3">
-                        <circle cx="1.5" cy="1.5" r="0.4" className="fill-green-600/20" />
+                      <pattern id="forest" patternUnits="userSpaceOnUse" width="2" height="2">
+                        <circle cx="1" cy="1" r="0.3" className="fill-green-700/25" />
                       </pattern>
+                      <pattern id="fields" patternUnits="userSpaceOnUse" width="4" height="4">
+                        <rect x="0" y="0" width="4" height="1" className="fill-yellow-600/15" />
+                        <rect x="0" y="2" width="4" height="1" className="fill-yellow-700/15" />
+                      </pattern>
+                      <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style={{ stopColor: '#60a5fa', stopOpacity: 0.4 }} />
+                        <stop offset="50%" style={{ stopColor: '#3b82f6', stopOpacity: 0.6 }} />
+                        <stop offset="100%" style={{ stopColor: '#60a5fa', stopOpacity: 0.4 }} />
+                      </linearGradient>
                     </defs>
                     
                     <path 
@@ -388,56 +397,128 @@ const Index = () => {
                       className="fill-muted/50 stroke-primary stroke-[0.5]"
                     />
                     
-                    <rect x="18" y="28" width="30" height="25" fill="url(#forest)" opacity="0.6" />
-                    <rect x="58" y="32" width="25" height="22" fill="url(#forest)" opacity="0.6" />
-                    <rect x="22" y="60" width="28" height="15" fill="url(#forest)" opacity="0.5" />
+                    <rect x="16" y="27" width="35" height="28" fill="url(#forest)" opacity="0.7" />
+                    <rect x="56" y="30" width="28" height="25" fill="url(#forest)" opacity="0.7" />
+                    <rect x="20" y="58" width="32" height="17" fill="url(#forest)" opacity="0.6" />
+                    
+                    <rect x="52" y="55" width="20" height="12" fill="url(#fields)" opacity="0.8" />
+                    <rect x="30" y="42" width="18" height="10" fill="url(#fields)" opacity="0.7" />
                     
                     <path 
-                      d="M 10,50 Q 30,55 50,48 T 90,52" 
-                      className="fill-none stroke-blue-400/60 stroke-[1]"
+                      d="M 8,50 Q 20,53 35,50 Q 50,47 65,49 Q 75,50 90,52" 
+                      fill="url(#waterGradient)"
+                      className="stroke-blue-500 stroke-[1.2]"
                     />
-                    <text x="60" y="44" className="fill-blue-600 text-[2.8px] font-bold font-cormorant">р. Кама</text>
-                    
                     <path 
-                      d="M 40,25 Q 45,40 48,55" 
-                      className="fill-none stroke-blue-400/60 stroke-[0.7]"
+                      d="M 8,50 Q 20,53 35,50 Q 50,47 65,49 Q 75,50 90,52 L 90,56 Q 75,54 65,53 Q 50,51 35,54 Q 20,57 8,54 Z" 
+                      fill="url(#waterGradient)"
+                      opacity="0.5"
                     />
-                    <text x="42" y="35" className="fill-blue-600 text-[2.2px] font-cormorant">р. Чепца</text>
+                    <text x="62" y="43" className="fill-blue-700 text-[3px] font-bold font-cormorant">Река Кама</text>
                     
                     <path 
-                      d="M 55,35 Q 58,45 60,52" 
+                      d="M 38,22 Q 42,30 45,38 Q 47,46 48,55" 
+                      className="fill-none stroke-blue-400/70 stroke-[0.9]"
+                    />
+                    <path 
+                      d="M 38,22 Q 42,30 45,38 Q 47,46 48,55 L 49,55 Q 48,46 46,38 Q 43,30 39,22 Z" 
+                      className="fill-blue-400/20"
+                    />
+                    <text x="40" y="33" className="fill-blue-700 text-[2.5px] font-semibold font-cormorant">р. Чепца</text>
+                    
+                    <path 
+                      d="M 54,32 Q 56,40 58,48" 
+                      className="fill-none stroke-blue-400/60 stroke-[0.6]"
+                    />
+                    <text x="56" y="39" className="fill-blue-600 text-[2px] font-cormorant">р. Иж</text>
+                    
+                    <path 
+                      d="M 26,58 Q 32,60 38,62 Q 42,63 46,65" 
+                      className="fill-none stroke-blue-400/60 stroke-[0.6]"
+                    />
+                    <text x="30" y="56" className="fill-blue-600 text-[2px] font-cormorant">р. Сива</text>
+                    
+                    <path 
+                      d="M 70,48 Q 74,49 78,49" 
+                      className="fill-none stroke-blue-400/60 stroke-[0.6]"
+                    />
+                    <text x="72" y="46" className="fill-blue-600 text-[1.8px] font-cormorant">Вотка</text>
+                    
+                    <path 
+                      d="M 28,35 Q 32,40 35,45" 
                       className="fill-none stroke-blue-400/50 stroke-[0.5]"
                     />
-                    <text x="57" y="42" className="fill-blue-500 text-[1.8px] font-cormorant">Иж</text>
+                    <text x="30" y="39" className="fill-blue-500 text-[1.6px] font-cormorant">Лоза</text>
                     
-                    <path 
-                      d="M 28,60 Q 35,62 42,65" 
-                      className="fill-none stroke-blue-400/50 stroke-[0.5]"
-                    />
-                    <text x="32" y="59" className="fill-blue-500 text-[1.8px] font-cormorant">Сива</text>
+                    <path d="M 10,20 L 90,20 M 10,80 L 90,80" className="stroke-border stroke-[0.3] stroke-dasharray-2" />
+                    <text x="5" y="51" className="fill-muted-foreground text-[2px]">С</text>
+                    <text x="92" y="51" className="fill-muted-foreground text-[2px]">Ю</text>
                     
-                    <circle cx="50" cy="50" r="2" className="fill-red-600 stroke-red-900 stroke-[0.3]" />
-                    <text x="50" y="57" textAnchor="middle" className="fill-primary text-[3.5px] font-bold">ИЖЕВСК</text>
-                    <circle cx="50" cy="50" r="3" className="fill-none stroke-red-600/30 stroke-[0.5]" />
+                    <g className="drop-shadow-md">
+                      <circle cx="50" cy="50" r="2.5" className="fill-red-600 stroke-red-900 stroke-[0.4]" />
+                      <circle cx="50" cy="50" r="3.5" className="fill-none stroke-red-600/40 stroke-[0.6] animate-pulse" />
+                      <circle cx="50" cy="50" r="5" className="fill-none stroke-red-600/20 stroke-[0.4]" />
+                      <text x="50" y="58" textAnchor="middle" className="fill-primary text-[3.8px] font-bold drop-shadow">ИЖЕВСК</text>
+                      <text x="50" y="61" textAnchor="middle" className="fill-muted-foreground text-[1.5px]">столица</text>
+                    </g>
                     
-                    <circle cx="70" cy="60" r="1.3" className="fill-primary stroke-primary-foreground stroke-[0.2]" />
-                    <text x="70" y="65" textAnchor="middle" className="fill-primary text-[2.5px] font-semibold">Воткинск</text>
+                    <circle cx="70" cy="60" r="1.5" className="fill-primary stroke-primary-foreground stroke-[0.3]" />
+                    <text x="70" y="66" textAnchor="middle" className="fill-primary text-[2.6px] font-semibold">Воткинск</text>
+                    <text x="70" y="68.5" textAnchor="middle" className="fill-muted-foreground text-[1.3px]">102 тыс.</text>
                     
-                    <circle cx="35" cy="30" r="1.3" className="fill-primary stroke-primary-foreground stroke-[0.2]" />
-                    <text x="35" y="27" textAnchor="middle" className="fill-primary text-[2.5px] font-semibold">Глазов</text>
+                    <circle cx="35" cy="30" r="1.5" className="fill-primary stroke-primary-foreground stroke-[0.3]" />
+                    <text x="35" y="27" textAnchor="middle" className="fill-primary text-[2.6px] font-semibold">Глазов</text>
+                    <text x="35" y="24.5" textAnchor="middle" className="fill-muted-foreground text-[1.3px]">91 тыс.</text>
                     
-                    <circle cx="65" cy="65" r="1.3" className="fill-primary stroke-primary-foreground stroke-[0.2]" />
-                    <text x="65" y="70" textAnchor="middle" className="fill-primary text-[2.5px] font-semibold">Сарапул</text>
+                    <circle cx="65" cy="65" r="1.5" className="fill-primary stroke-primary-foreground stroke-[0.3]" />
+                    <text x="65" y="71" textAnchor="middle" className="fill-primary text-[2.6px] font-semibold">Сарапул</text>
+                    <text x="65" y="73.5" textAnchor="middle" className="fill-muted-foreground text-[1.3px]">95 тыс.</text>
                     
-                    <circle cx="40" cy="55" r="1" className="fill-primary/80" />
-                    <text x="40" y="59" textAnchor="middle" className="fill-primary text-[2px]">Можга</text>
+                    <circle cx="40" cy="55" r="1.1" className="fill-primary/80 stroke-primary stroke-[0.2]" />
+                    <text x="40" y="60" textAnchor="middle" className="fill-primary text-[2.2px]">Можга</text>
+                    <text x="40" y="62.2" textAnchor="middle" className="fill-muted-foreground text-[1.2px]">47 тыс.</text>
                     
-                    <circle cx="30" cy="35" r="0.8" className="fill-primary/80" />
-                    <text x="30" y="32" textAnchor="middle" className="fill-primary text-[1.8px]">Шаркан</text>
+                    <circle cx="30" cy="35" r="0.9" className="fill-primary/70 stroke-primary stroke-[0.2]" />
+                    <text x="30" y="31.5" textAnchor="middle" className="fill-primary text-[2px]">Шаркан</text>
                     
-                    <path d="M 65,52 L 78,48" className="stroke-amber-600/50 stroke-[0.4] stroke-dasharray-1" />
-                    <rect x="78" y="46" width="3" height="2" className="fill-amber-600/40 stroke-amber-700 stroke-[0.2]" />
-                    <text x="82" y="49" className="fill-amber-700 text-[1.6px] font-cormorant">ГЭС</text>
+                    <circle cx="58" cy="42" r="0.8" className="fill-primary/70 stroke-primary stroke-[0.2]" />
+                    <text x="58" y="39" textAnchor="middle" className="fill-primary text-[1.9px]">Як-Бодья</text>
+                    
+                    <circle cx="25" cy="45" r="0.8" className="fill-primary/70 stroke-primary stroke-[0.2]" />
+                    <text x="25" y="42" textAnchor="middle" className="fill-primary text-[1.9px]">Ува</text>
+                    
+                    <circle cx="43" cy="38" r="0.8" className="fill-primary/70 stroke-primary stroke-[0.2]" />
+                    <text x="43" y="35" textAnchor="middle" className="fill-primary text-[1.9px]">Игра</text>
+                    
+                    <path d="M 65,52 L 78,48" className="stroke-amber-600/60 stroke-[0.5]" />
+                    <rect x="77" y="45" width="4" height="3" className="fill-amber-600/50 stroke-amber-800 stroke-[0.3]" />
+                    <text x="83" y="48.5" className="fill-amber-800 text-[2px] font-bold">Воткинская ГЭС</text>
+                    
+                    <path className="stroke-purple-600/40 stroke-[0.4] fill-none stroke-dasharray-1,1">
+                      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+                        values="M 50,50 L 52,48 L 54,50 L 56,48 L 58,50;
+                                M 50,50 L 52,49 L 54,51 L 56,49 L 58,50;
+                                M 50,50 L 52,48 L 54,50 L 56,48 L 58,50" />
+                    </path>
+                    
+                    <g opacity="0.6">
+                      <path d="M 45,65 L 75,65" className="stroke-gray-600 stroke-[0.6]" />
+                      <text x="60" y="68" className="fill-gray-700 text-[1.5px]">Трасса М7</text>
+                    </g>
+                    
+                    <g opacity="0.5">
+                      <circle cx="23" cy="52" r="1.5" className="fill-green-600/30 stroke-green-700 stroke-[0.3]" />
+                      <text x="23" y="49" textAnchor="middle" className="fill-green-800 text-[1.4px]">Нечкино</text>
+                    </g>
+                    
+                    <rect x="85" y="18" width="13" height="12" className="fill-card stroke-border stroke-[0.3]" rx="0.5" />
+                    <text x="91.5" y="21" textAnchor="middle" className="fill-primary text-[1.6px] font-bold">Легенда</text>
+                    <circle cx="87" cy="23" r="0.4" className="fill-red-600" />
+                    <text x="88.5" y="23.5" className="fill-foreground text-[1.2px]">Столица</text>
+                    <circle cx="87" cy="25.5" r="0.4" className="fill-primary" />
+                    <text x="88.5" y="26" className="fill-foreground text-[1.2px]">Города</text>
+                    <circle cx="87" cy="28" r="0.4" className="fill-accent" />
+                    <text x="88.5" y="28.5" className="fill-foreground text-[1.2px]">Достопр.</text>
                     
                     {landmarks.map((landmark, index) => (
                       <g key={index}>
