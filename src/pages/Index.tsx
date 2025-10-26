@@ -100,7 +100,8 @@ const Index = () => {
       type: 'Музей',
       x: 25,
       y: 45,
-      description: 'Уникальный музей под открытым небом с образцами удмуртского зодчества. Включает усадьбы XIX-XX веков, мельницу, амбары и культовые сооружения. Проводятся традиционные праздники и мастер-классы.'
+      description: 'Уникальный музей под открытым небом с образцами удмуртского зодчества. Включает усадьбы XIX-XX веков, мельницу, амбары и культовые сооружения. Проводятся традиционные праздники и мастер-классы.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/d8864123-ea1e-4e12-ba5f-ed530e2ce3a4.jpg'
     },
     { 
       name: 'Свято-Михайловский собор', 
@@ -108,7 +109,8 @@ const Index = () => {
       type: 'Храм',
       x: 50,
       y: 50,
-      description: 'Величественный православный храм, памятник архитектуры XIX века. Построен в 1907-1915 годах. Главная святыня — чудотворная икона Божией Матери. Высота колокольни — 62 метра.'
+      description: 'Величественный православный храм, памятник архитектуры XIX века. Построен в 1907-1915 годах. Главная святыня — чудотворная икона Божией Матери. Высота колокольни — 62 метра.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/17de1690-d082-4a9a-a610-67c25d7e6e78.jpg'
     },
     { 
       name: 'Национальный музей УР им. Кузебая Герда', 
@@ -116,7 +118,8 @@ const Index = () => {
       type: 'Музей',
       x: 48,
       y: 52,
-      description: 'Главный музей республики с богатой коллекцией этнографии и истории. Более 200 тысяч экспонатов. Уникальные археологические находки, предметы быта, национальные костюмы.'
+      description: 'Главный музей республики с богатой коллекцией этнографии и истории. Более 200 тысяч экспонатов. Уникальные археологические находки, предметы быта, национальные костюмы.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/d1b877c1-ff21-41a6-af7b-084c22a4c512.jpg'
     },
     { 
       name: 'Усадьба П.И. Чайковского в Воткинске', 
@@ -124,7 +127,8 @@ const Index = () => {
       type: 'Музей',
       x: 70,
       y: 60,
-      description: 'Дом-музей великого русского композитора, место его рождения (1840). Мемориальная экспозиция, концертный зал. Ежегодно проводится международный фестиваль.'
+      description: 'Дом-музей великого русского композитора, место его рождения (1840). Мемориальная экспозиция, концертный зал. Ежегодно проводится международный фестиваль.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/37041cab-5a1c-46a5-bcc8-ed462df8a2fd.jpg'
     },
     { 
       name: 'Ижевский зоопарк', 
@@ -132,7 +136,8 @@ const Index = () => {
       type: 'Зоопарк',
       x: 52,
       y: 48,
-      description: 'Один из крупнейших зоопарков Приволжья. Более 200 видов животных. Участвует в программах сохранения редких видов. Площадь — 16 гектаров.'
+      description: 'Один из крупнейших зоопарков Приволжья. Более 200 видов животных. Участвует в программах сохранения редких видов. Площадь — 16 гектаров.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/6862fc1e-88a7-4b58-9827-c97e2990abdd.jpg'
     },
     { 
       name: 'Музей-заповедник «Иднакар»', 
@@ -140,7 +145,8 @@ const Index = () => {
       type: 'Музей',
       x: 35,
       y: 30,
-      description: 'Археологический комплекс IX-XIII веков. Древнее городище удмуртов. Музей истории Среднего Прикамья. Уникальные находки эпохи средневековья.'
+      description: 'Археологический комплекс IX-XIII веков. Древнее городище удмуртов. Музей истории Среднего Прикамья. Уникальные находки эпохи средневековья.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/1dd9e2e4-f155-4bb8-bfcc-101c07254c21.jpg'
     },
     { 
       name: 'Нечкинский национальный парк', 
@@ -148,7 +154,8 @@ const Index = () => {
       type: 'Природа',
       x: 75,
       y: 55,
-      description: 'Природоохранная территория на берегу Камы. Живописные ландшафты, редкие виды растений и животных. Экологические тропы, места отдыха.'
+      description: 'Природоохранная территория на берегу Камы. Живописные ландшафты, редкие виды растений и животных. Экологические тропы, места отдыха.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/09207f28-36ca-4b52-90f1-e4f01b3054d6.jpg'
     },
     { 
       name: 'Музей истории и культуры Среднего Прикамья', 
@@ -156,7 +163,8 @@ const Index = () => {
       type: 'Музей',
       x: 65,
       y: 65,
-      description: 'Один из старейших музеев Удмуртии (основан в 1909). Богатая коллекция по истории края. Купеческая архитектура XIX века.'
+      description: 'Один из старейших музеев Удмуртии (основан в 1909). Богатая коллекция по истории края. Купеческая архитектура XIX века.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/f59cbcd5-dc54-4888-a327-e940badbdcfd.jpg'
     },
     { 
       name: 'Парк им. С.М. Кирова', 
@@ -164,7 +172,8 @@ const Index = () => {
       type: 'Парк',
       x: 49,
       y: 51,
-      description: 'Главный городской парк культуры и отдыха. Создан в 1930-х годах. Аттракционы, пруд, аллеи. Популярное место семейного отдыха.'
+      description: 'Главный городской парк культуры и отдыха. Создан в 1930-х годах. Аттракционы, пруд, аллеи. Популярное место семейного отдыха.',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/1ee56581-4dc6-4e0e-9a54-f086c557a2bb.jpg'
     },
     { 
       name: 'Александро-Невский собор', 
@@ -518,11 +527,21 @@ const Index = () => {
                 {landmarks.map((item, index) => (
                   <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                     <div className="relative aspect-[4/3] bg-muted overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/30 flex items-center justify-center">
-                        <Icon name="Image" size={64} className="text-primary/30" />
-                      </div>
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
-                      <div className="absolute top-3 right-3 bg-accent text-accent-foreground px-3 py-1 rounded text-xs font-semibold">
+                      {item.image ? (
+                        <>
+                          <img 
+                            src={item.image} 
+                            alt={item.name}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
+                        </>
+                      ) : (
+                        <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/30 flex items-center justify-center">
+                          <Icon name="Image" size={64} className="text-primary/30" />
+                        </div>
+                      )}
+                      <div className="absolute top-3 right-3 bg-accent text-accent-foreground px-3 py-1 rounded text-xs font-semibold shadow-lg">
                         {item.type}
                       </div>
                     </div>
