@@ -166,6 +166,71 @@ const Index = () => {
       y: 51,
       description: 'Главный городской парк культуры и отдыха. Создан в 1930-х годах. Аттракционы, пруд, аллеи. Популярное место семейного отдыха.'
     },
+    { 
+      name: 'Александро-Невский собор', 
+      location: 'г. Ижевск', 
+      type: 'Храм',
+      x: 51,
+      y: 49,
+      description: 'Красивейший храм XIX века в псевдорусском стиле. Возведён в 1823 году для заводских рабочих. Восстановлен в 2007 году. Главная святыня — мощи святых.'
+    },
+    { 
+      name: 'Музей-усадьба академика А.Ф. Можайского', 
+      location: 'Можгинский район', 
+      type: 'Музей',
+      x: 40,
+      y: 55,
+      description: 'Родина создателя первого российского самолёта. Мемориальная усадьба, экспозиция об истории авиации. Регулярные выставки и лекции.'
+    },
+    { 
+      name: 'Ботанический сад УдГУ', 
+      location: 'г. Ижевск', 
+      type: 'Природа',
+      x: 53,
+      y: 52,
+      description: 'Коллекция более 2000 видов растений. Дендрарий, оранжереи с тропическими растениями. Научная база университета. Образовательные программы.'
+    },
+    { 
+      name: 'Шаркан', 
+      location: 'с. Шаркан', 
+      type: 'Село',
+      x: 30,
+      y: 35,
+      description: 'Центр удмуртской культуры. Знаменитые удмуртские перепечи. Музей удмуртского быта. Традиционные праздники и фестивали национальной кухни.'
+    },
+    { 
+      name: 'Камская ГЭС и Воткинское водохранилище', 
+      location: 'Воткинский район', 
+      type: 'Природа',
+      x: 68,
+      y: 58,
+      description: 'Крупнейшая гидроэлектростанция региона. Водохранилище протяжённостью 365 км. Популярное место отдыха, рыбалки и водного туризма.'
+    },
+    { 
+      name: 'Соборная площадь Ижевска', 
+      location: 'г. Ижевск', 
+      type: 'Площадь',
+      x: 50,
+      y: 51,
+      description: 'Центральная площадь столицы. Архитектурный ансамбль XVIII-XIX веков. Место проведения главных городских мероприятий и праздников.'
+    },
+    { 
+      name: 'Оружейный завод и музей оружия', 
+      location: 'г. Ижевск', 
+      type: 'Музей',
+      x: 50,
+      y: 48,
+      description: 'Легендарный завод имени М.Т. Калашникова. Музей стрелкового оружия с уникальными экспонатами. История оружейного дела с 1807 года.'
+    },
+    { 
+      name: 'Заякинская кедровая роща', 
+      location: 'Завьяловский район', 
+      type: 'Природа',
+      x: 55,
+      y: 47,
+      description: 'Уникальный природный памятник. Кедровая роща возрастом более 200 лет. Реликтовые деревья, экологические тропы. Место силы и отдыха.'
+    }
+    },
   ];
 
   return (
@@ -296,34 +361,67 @@ const Index = () => {
                       Удмуртская Республика
                     </text>
                     
+                    <defs>
+                      <pattern id="forest" patternUnits="userSpaceOnUse" width="3" height="3">
+                        <circle cx="1.5" cy="1.5" r="0.4" className="fill-green-600/20" />
+                      </pattern>
+                    </defs>
+                    
                     <path 
                       d="M 20,30 L 80,30 L 85,50 L 75,70 L 25,75 L 15,50 Z" 
                       className="fill-muted/50 stroke-primary stroke-[0.5]"
                     />
                     
+                    <rect x="18" y="28" width="30" height="25" fill="url(#forest)" opacity="0.6" />
+                    <rect x="58" y="32" width="25" height="22" fill="url(#forest)" opacity="0.6" />
+                    <rect x="22" y="60" width="28" height="15" fill="url(#forest)" opacity="0.5" />
+                    
                     <path 
                       d="M 10,50 Q 30,55 50,48 T 90,52" 
-                      className="fill-none stroke-blue-400/60 stroke-[0.8]"
+                      className="fill-none stroke-blue-400/60 stroke-[1]"
                     />
-                    <text x="45" y="45" className="fill-blue-500 text-[2.5px] font-cormorant">р. Кама</text>
+                    <text x="60" y="44" className="fill-blue-600 text-[2.8px] font-bold font-cormorant">р. Кама</text>
                     
                     <path 
                       d="M 40,25 Q 45,40 48,55" 
-                      className="fill-none stroke-blue-400/60 stroke-[0.6]"
+                      className="fill-none stroke-blue-400/60 stroke-[0.7]"
                     />
-                    <text x="42" y="38" className="fill-blue-500 text-[2px] font-cormorant">Чепца</text>
+                    <text x="42" y="35" className="fill-blue-600 text-[2.2px] font-cormorant">р. Чепца</text>
                     
-                    <circle cx="50" cy="50" r="1.5" className="fill-primary" />
-                    <text x="50" y="56" textAnchor="middle" className="fill-primary text-[3px] font-bold">Ижевск</text>
+                    <path 
+                      d="M 55,35 Q 58,45 60,52" 
+                      className="fill-none stroke-blue-400/50 stroke-[0.5]"
+                    />
+                    <text x="57" y="42" className="fill-blue-500 text-[1.8px] font-cormorant">Иж</text>
                     
-                    <circle cx="70" cy="60" r="1" className="fill-primary/70" />
-                    <text x="70" y="64" textAnchor="middle" className="fill-primary text-[2.5px]">Воткинск</text>
+                    <path 
+                      d="M 28,60 Q 35,62 42,65" 
+                      className="fill-none stroke-blue-400/50 stroke-[0.5]"
+                    />
+                    <text x="32" y="59" className="fill-blue-500 text-[1.8px] font-cormorant">Сива</text>
                     
-                    <circle cx="35" cy="30" r="1" className="fill-primary/70" />
-                    <text x="35" y="27" textAnchor="middle" className="fill-primary text-[2.5px]">Глазов</text>
+                    <circle cx="50" cy="50" r="2" className="fill-red-600 stroke-red-900 stroke-[0.3]" />
+                    <text x="50" y="57" textAnchor="middle" className="fill-primary text-[3.5px] font-bold">ИЖЕВСК</text>
+                    <circle cx="50" cy="50" r="3" className="fill-none stroke-red-600/30 stroke-[0.5]" />
                     
-                    <circle cx="65" cy="65" r="1" className="fill-primary/70" />
-                    <text x="65" y="70" textAnchor="middle" className="fill-primary text-[2.5px]">Сарапул</text>
+                    <circle cx="70" cy="60" r="1.3" className="fill-primary stroke-primary-foreground stroke-[0.2]" />
+                    <text x="70" y="65" textAnchor="middle" className="fill-primary text-[2.5px] font-semibold">Воткинск</text>
+                    
+                    <circle cx="35" cy="30" r="1.3" className="fill-primary stroke-primary-foreground stroke-[0.2]" />
+                    <text x="35" y="27" textAnchor="middle" className="fill-primary text-[2.5px] font-semibold">Глазов</text>
+                    
+                    <circle cx="65" cy="65" r="1.3" className="fill-primary stroke-primary-foreground stroke-[0.2]" />
+                    <text x="65" y="70" textAnchor="middle" className="fill-primary text-[2.5px] font-semibold">Сарапул</text>
+                    
+                    <circle cx="40" cy="55" r="1" className="fill-primary/80" />
+                    <text x="40" y="59" textAnchor="middle" className="fill-primary text-[2px]">Можга</text>
+                    
+                    <circle cx="30" cy="35" r="0.8" className="fill-primary/80" />
+                    <text x="30" y="32" textAnchor="middle" className="fill-primary text-[1.8px]">Шаркан</text>
+                    
+                    <path d="M 65,52 L 78,48" className="stroke-amber-600/50 stroke-[0.4] stroke-dasharray-1" />
+                    <rect x="78" y="46" width="3" height="2" className="fill-amber-600/40 stroke-amber-700 stroke-[0.2]" />
+                    <text x="82" y="49" className="fill-amber-700 text-[1.6px] font-cormorant">ГЭС</text>
                     
                     {landmarks.map((landmark, index) => (
                       <g key={index}>
@@ -418,7 +516,7 @@ const Index = () => {
             
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {landmarks.slice(0, 6).map((item, index) => (
+                {landmarks.map((item, index) => (
                   <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                     <div className="relative aspect-[4/3] bg-muted overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/30 flex items-center justify-center">
@@ -447,63 +545,85 @@ const Index = () => {
               
               <div className="mt-12 bg-card border-2 border-border rounded-lg p-8">
                 <h3 className="font-cormorant text-3xl font-bold text-primary mb-6 text-center">
-                  Исторические памятники
+                  Категории достопримечательностей
                 </h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
-                        <Icon name="Church" size={24} />
-                      </div>
-                      <div>
-                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
-                          Церкви и храмы
-                        </h4>
-                        <p className="text-muted-foreground font-merriweather text-sm">
-                          Православные храмы XIX-XX веков, сочетающие русскую и местную архитектуру
-                        </p>
-                      </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                      <Icon name="Church" size={28} />
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
-                        <Icon name="Castle" size={24} />
-                      </div>
-                      <div>
-                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
-                          Древние городища
-                        </h4>
-                        <p className="text-muted-foreground font-merriweather text-sm">
-                          Археологические памятники средневековья, свидетели древней истории
-                        </p>
-                      </div>
+                    <div>
+                      <h4 className="font-cormorant text-xl font-bold text-primary mb-2">
+                        Церкви и храмы
+                      </h4>
+                      <p className="text-muted-foreground font-merriweather text-sm leading-relaxed">
+                        Православные храмы XIX-XX веков, сочетающие русскую и местную архитектуру
+                      </p>
                     </div>
                   </div>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
-                        <Icon name="Home" size={24} />
-                      </div>
-                      <div>
-                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
-                          Деревянное зодчество
-                        </h4>
-                        <p className="text-muted-foreground font-merriweather text-sm">
-                          Традиционные удмуртские усадьбы и постройки из дерева
-                        </p>
-                      </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                      <Icon name="Castle" size={28} />
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
-                        <Icon name="Trees" size={24} />
-                      </div>
-                      <div>
-                        <h4 className="font-cormorant text-xl font-bold text-primary mb-1">
-                          Природные памятники
-                        </h4>
-                        <p className="text-muted-foreground font-merriweather text-sm">
-                          Заповедники, национальные парки и уникальные ландшафты
-                        </p>
-                      </div>
+                    <div>
+                      <h4 className="font-cormorant text-xl font-bold text-primary mb-2">
+                        Древние городища
+                      </h4>
+                      <p className="text-muted-foreground font-merriweather text-sm leading-relaxed">
+                        Археологические памятники средневековья, свидетели древней истории
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                      <Icon name="Home" size={28} />
+                    </div>
+                    <div>
+                      <h4 className="font-cormorant text-xl font-bold text-primary mb-2">
+                        Деревянное зодчество
+                      </h4>
+                      <p className="text-muted-foreground font-merriweather text-sm leading-relaxed">
+                        Традиционные удмуртские усадьбы и постройки из дерева
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                      <Icon name="Trees" size={28} />
+                    </div>
+                    <div>
+                      <h4 className="font-cormorant text-xl font-bold text-primary mb-2">
+                        Природные памятники
+                      </h4>
+                      <p className="text-muted-foreground font-merriweather text-sm leading-relaxed">
+                        Заповедники, национальные парки и уникальные ландшафты
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                      <Icon name="Factory" size={28} />
+                    </div>
+                    <div>
+                      <h4 className="font-cormorant text-xl font-bold text-primary mb-2">
+                        Промышленность
+                      </h4>
+                      <p className="text-muted-foreground font-merriweather text-sm leading-relaxed">
+                        Оружейный завод, музеи промышленности и технологий
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent text-accent-foreground p-3 rounded shrink-0">
+                      <Icon name="Music" size={28} />
+                    </div>
+                    <div>
+                      <h4 className="font-cormorant text-xl font-bold text-primary mb-2">
+                        Культурные центры
+                      </h4>
+                      <p className="text-muted-foreground font-merriweather text-sm leading-relaxed">
+                        Музеи этнографии, дома-музеи знаменитых людей региона
+                      </p>
                     </div>
                   </div>
                 </div>
