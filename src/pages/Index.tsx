@@ -171,25 +171,45 @@ const Index = () => {
       title: 'Гербер', 
       description: 'Народный праздник окончания весенних полевых работ. Проводится после завершения посевной. Включает обрядовые песни, хороводы, традиционные игры и общий пир.', 
       season: 'Весна',
-      activities: ['Хороводы на природе', 'Обрядовые песни', 'Традиционные игры и состязания']
+      seasonIcon: 'Flower2',
+      activities: ['Хороводы на природе', 'Обрядовые песни', 'Традиционные игры и состязания'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/c8487ae0-1fe9-4ea2-9587-1e3cc463a5de.jpg',
+      timing: 'Конец мая - начало июня',
+      meaning: 'Праздник символизирует завершение самого важного этапа сельскохозяйственного года и надежду на богатый урожай',
+      traditions: ['Общий пир всей деревней на природе', 'Соревнования в силе и ловкости', 'Молодёжные хороводы до рассвета']
     },
     { 
       title: 'Туно', 
       description: 'Летний праздник сенокоса, посвящённый началу жатвы. День благодарения природе за урожай. Сопровождается народными гуляниями, песнями и ритуальными угощениями.', 
       season: 'Лето',
-      activities: ['Совместный сенокос', 'Народные гулянья', 'Традиционные угощения в поле']
+      seasonIcon: 'Sun',
+      activities: ['Совместный сенокос', 'Народные гулянья', 'Традиционные угощения в поле'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/8780f769-7abe-465f-bb04-444bd580b3dc.jpg',
+      timing: 'Июль - август',
+      meaning: 'Праздник труда и единения с природой, когда вся община собирается на совместную работу',
+      traditions: ['Первый сноп украшают лентами', 'На поле устраивают общий обед', 'Поют специальные сенокосные песни']
     },
     { 
       title: 'Сӥзьыл юон', 
       description: 'Осенний праздник урожая и благодарения. Время подведения итогов года, благодарности земле. Готовятся блюда из нового урожая, проводятся ярмарки и гулянья.', 
       season: 'Осень',
-      activities: ['Ярмарки урожая', 'Благодарственные обряды', 'Приготовление блюд из нового зерна']
+      seasonIcon: 'Leaf',
+      activities: ['Ярмарки урожая', 'Благодарственные обряды', 'Приготовление блюд из нового зерна'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/a4a904bb-1644-4c00-ad2c-be2ae0866b0c.jpg',
+      timing: 'Сентябрь - октябрь',
+      meaning: 'Время благодарности земле за урожай и подготовки к зиме, один из главных праздников года',
+      traditions: ['Пекут первый хлеб из нового зерна', 'Устраивают ярмарки с народными гуляниями', 'Проводят обряды благодарения духам земли']
     },
     { 
       title: 'Толсур', 
       description: 'Зимний праздник с гаданиями и обрядами. Время рождественско-новогоднего цикла. Молодёжь ходит ряжеными, проводятся гадания на будущее, зажигаются ритуальные костры.', 
       season: 'Зима',
-      activities: ['Ряженье и колядки', 'Святочные гадания', 'Зажигание обрядовых костров']
+      seasonIcon: 'Snowflake',
+      activities: ['Ряженье и колядки', 'Святочные гадания', 'Зажигание обрядовых костров'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/a17bf4f8-00c7-4035-ad57-f07cc495dec0.jpg',
+      timing: 'Декабрь - январь',
+      meaning: 'Самый мистический праздник года, время общения с духами и предсказания будущего',
+      traditions: ['Молодёжь ходит по домам ряжеными', 'Девушки гадают на суженого', 'Зажигают костры для отпугивания злых духов']
     },
     { 
       title: 'Вӧй', 
@@ -527,17 +547,65 @@ const Index = () => {
             <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-primary mb-8 text-center">
               Народные традиции
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {traditions.map((item, index) => (
-                <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-xl transition-all duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex justify-between items-start mb-4">
-                      <h3 className="font-cormorant text-3xl font-bold text-primary">{item.title}</h3>
-                      <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded text-sm font-semibold">
-                        {item.season}
-                      </span>
+                <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+                  <div className="relative h-64 overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm text-accent-foreground px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+                      <Icon name={item.seasonIcon as any} size={20} />
+                      <span className="font-cormorant font-bold">{item.season}</span>
                     </div>
-                    <p className="text-muted-foreground font-merriweather leading-relaxed">{item.description}</p>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h3 className="font-cormorant text-3xl font-bold text-white mb-2">{item.title}</h3>
+                      <p className="text-white/90 text-sm font-semibold">{item.timing}</p>
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <p className="text-muted-foreground font-merriweather leading-relaxed text-sm mb-4">{item.description}</p>
+                    
+                    <div className="mb-4 p-4 bg-accent/5 rounded-lg border border-accent/20">
+                      <h4 className="font-cormorant text-lg font-bold text-primary mb-2 flex items-center gap-2">
+                        <Icon name="Heart" size={18} className="text-accent" />
+                        Смысл праздника
+                      </h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{item.meaning}</p>
+                    </div>
+                    
+                    <div className="space-y-3 mb-4">
+                      <h4 className="font-cormorant text-lg font-bold text-primary flex items-center gap-2">
+                        <Icon name="CalendarDays" size={18} className="text-accent" />
+                        Основные мероприятия
+                      </h4>
+                      <ul className="space-y-2">
+                        {item.activities.map((activity, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm">
+                            <Icon name="Check" size={16} className="text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-muted-foreground">{activity}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-border">
+                      <h4 className="font-cormorant text-lg font-bold text-primary mb-3 flex items-center gap-2">
+                        <Icon name="Sparkles" size={18} className="text-accent" />
+                        Традиции
+                      </h4>
+                      <div className="space-y-2">
+                        {item.traditions.map((tradition, idx) => (
+                          <div key={idx} className="flex items-start gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                            <p className="text-xs text-muted-foreground leading-relaxed">{tradition}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
