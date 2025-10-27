@@ -8,11 +8,96 @@ const Index = () => {
   const [selectedLandmark, setSelectedLandmark] = useState<number | null>(null);
 
   const historyTimeline = [
-    { year: '1552', event: 'Включение Удмуртии в состав Российского государства' },
-    { year: '1774', event: 'Участие удмуртов в восстании Емельяна Пугачёва' },
-    { year: '1920', event: 'Образование Вотской автономной области' },
-    { year: '1932', event: 'Преобразование в Удмуртскую АССР' },
-    { year: '1991', event: 'Становление Удмуртской Республики' },
+    { 
+      year: 'IX-XI вв.', 
+      event: 'Формирование удмуртского этноса',
+      description: 'На территории Прикамья складывается финно-угорское население. Археологические находки свидетельствуют о развитом земледелии, скотоводстве и металлургии.',
+      icon: 'Users'
+    },
+    { 
+      year: 'XIII-XIV вв.', 
+      event: 'Под властью Золотой Орды',
+      description: 'Удмуртские земли входят в состав Золотой Орды. Несмотря на иго, сохраняются местные традиции и язык.',
+      icon: 'Castle'
+    },
+    { 
+      year: '1489', 
+      event: 'Присоединение к Московскому государству',
+      description: 'После падения Казанского ханства северные удмурты добровольно входят в состав России. Южные удмурты присоединяются в 1552 году после взятия Казани.',
+      icon: 'Flag'
+    },
+    { 
+      year: '1774', 
+      event: 'Восстание Емельяна Пугачёва',
+      description: 'Удмурты активно участвуют в крестьянской войне. Многие деревни поддерживают восставших против крепостного гнёта.',
+      icon: 'Flame'
+    },
+    { 
+      year: '1807', 
+      event: 'Основание Ижевского оружейного завода',
+      description: 'По указу императора Александра I основан железоделательный завод. Начало промышленной истории региона. Вокруг завода формируется поселение.',
+      icon: 'Factory'
+    },
+    { 
+      year: '1835', 
+      event: 'Ижевск получает статус города',
+      description: 'Заводской посёлок официально становится городом. Развивается оружейное производство, растёт население.',
+      icon: 'Building'
+    },
+    { 
+      year: '1918', 
+      event: 'Ижевско-Воткинское восстание',
+      description: 'Крупнейшее антибольшевистское выступление рабочих Ижевского и Воткинского заводов. Восстание подавлено Красной Армией.',
+      icon: 'Swords'
+    },
+    { 
+      year: '1920', 
+      event: 'Образование Вотской автономной области',
+      description: '4 ноября создана автономия в составе РСФСР с центром в Ижевске. Начало национально-государственного строительства.',
+      icon: 'Map'
+    },
+    { 
+      year: '1932', 
+      event: 'Преобразование в Удмуртскую АССР',
+      description: 'Область получает статус автономной республики. Вотяки официально переименованы в удмуртов.',
+      icon: 'Award'
+    },
+    { 
+      year: '1941-1945', 
+      event: 'Годы Великой Отечественной войны',
+      description: 'В республику эвакуировано более 50 предприятий. Ижевск становится крупнейшим центром военной промышленности. На фронт призваны более 260 тысяч человек.',
+      icon: 'Shield'
+    },
+    { 
+      year: '1947', 
+      event: 'Михаил Калашников создаёт АК-47',
+      description: 'На Ижевском заводе разработан легендарный автомат Калашникова. Оружие становится символом города и страны.',
+      icon: 'Target'
+    },
+    { 
+      year: '1985', 
+      event: 'Строительство метрополитена в Ижевске',
+      description: 'Начато строительство первого в Удмуртии метро. Проект заморожен, сохранились незавершённые тоннели.',
+      icon: 'Train'
+    },
+    { 
+      year: '1991', 
+      event: 'Становление Удмуртской Республики',
+      description: '20 сентября УАССР преобразована в Удмуртскую Республику в составе РФ. Принята Декларация о государственном суверенитете.',
+      icon: 'Star'
+    },
+    { 
+      year: '2007', 
+      event: 'Восстановление Александро-Невского собора',
+      description: 'После многолетней реставрации открыт главный храм Ижевска, разрушенный в советское время.',
+      icon: 'Church'
+    },
+    { 
+      year: '2020', 
+      event: '100-летие Удмуртской государственности',
+      description: 'Юбилейный год. Республика отмечает век со дня образования автономии. Современная Удмуртия — промышленный и культурный регион России.',
+      icon: 'PartyPopper'
+    },
   ];
 
   const culturalElements = [
@@ -300,19 +385,58 @@ const Index = () => {
             <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-primary mb-8 text-center">
               Историческая хроника
             </h2>
-            <div className="max-w-4xl mx-auto space-y-6">
-              {historyTimeline.map((item, index) => (
-                <Card key={index} className="border-2 border-border hover:shadow-xl transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-6">
-                      <div className="bg-accent text-accent-foreground px-4 py-2 rounded font-cormorant text-2xl font-bold min-w-[100px] text-center">
-                        {item.year}
+            <div className="max-w-5xl mx-auto">
+              <div className="relative">
+                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-accent via-accent to-accent/20"></div>
+                
+                <div className="space-y-12">
+                  {historyTimeline.map((item, index) => (
+                    <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                      <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-12' : 'text-left pl-12'}`}>
+                        <Card className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 group">
+                          <CardContent className="p-6">
+                            <div className="flex items-center gap-3 mb-3">
+                              {index % 2 === 0 ? (
+                                <>
+                                  <div className="flex-1">
+                                    <div className="bg-accent text-accent-foreground px-4 py-2 rounded font-cormorant text-xl font-bold inline-block">
+                                      {item.year}
+                                    </div>
+                                  </div>
+                                  <div className="bg-primary/10 text-primary p-2 rounded group-hover:scale-110 transition-transform">
+                                    <Icon name={item.icon as any} size={24} />
+                                  </div>
+                                </>
+                              ) : (
+                                <>
+                                  <div className="bg-primary/10 text-primary p-2 rounded group-hover:scale-110 transition-transform">
+                                    <Icon name={item.icon as any} size={24} />
+                                  </div>
+                                  <div className="flex-1">
+                                    <div className="bg-accent text-accent-foreground px-4 py-2 rounded font-cormorant text-xl font-bold inline-block">
+                                      {item.year}
+                                    </div>
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                            <h3 className="font-cormorant text-2xl font-bold text-primary mb-2">
+                              {item.event}
+                            </h3>
+                            <p className="text-muted-foreground font-merriweather leading-relaxed text-sm">
+                              {item.description}
+                            </p>
+                          </CardContent>
+                        </Card>
                       </div>
-                      <p className="text-lg font-merriweather leading-relaxed flex-1 pt-1">{item.event}</p>
+                      
+                      <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-accent border-4 border-background rounded-full z-10 shadow-lg"></div>
+                      
+                      <div className="w-5/12"></div>
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
