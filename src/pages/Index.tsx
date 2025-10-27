@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
+import UdmurtMap from '@/components/UdmurtMap';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('history');
@@ -607,7 +608,11 @@ const Index = () => {
               Карта достопримечательностей
             </h2>
             
-            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8">
+            <div className="max-w-7xl mx-auto mb-8">
+              <UdmurtMap />
+            </div>
+            
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 hidden">
               <div className="relative bg-card border-4 border-primary rounded-lg p-8 aspect-square">
                 <div className="absolute inset-0 m-8 bg-secondary/30 rounded border-2 border-border">
                   <svg className="w-full h-full" viewBox="0 0 100 100">
