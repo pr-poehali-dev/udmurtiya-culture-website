@@ -12,91 +12,106 @@ const Index = () => {
       year: 'IX-XI вв.', 
       event: 'Формирование удмуртского этноса',
       description: 'На территории Прикамья складывается финно-угорское население. Археологические находки свидетельствуют о развитом земледелии, скотоводстве и металлургии.',
-      icon: 'Users'
+      icon: 'Users',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/5e2fbddb-9399-4cc8-b5a7-494782b701c4.jpg'
     },
     { 
       year: 'XIII-XIV вв.', 
       event: 'Под властью Золотой Орды',
       description: 'Удмуртские земли входят в состав Золотой Орды. Несмотря на иго, сохраняются местные традиции и язык.',
-      icon: 'Castle'
+      icon: 'Castle',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/525be587-6ce5-4a83-a344-36cf55ea0280.jpg'
     },
     { 
       year: '1489', 
       event: 'Присоединение к Московскому государству',
       description: 'После падения Казанского ханства северные удмурты добровольно входят в состав России. Южные удмурты присоединяются в 1552 году после взятия Казани.',
-      icon: 'Flag'
+      icon: 'Flag',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/1310a6cf-a175-4515-893d-10e961689858.jpg'
     },
     { 
       year: '1774', 
       event: 'Восстание Емельяна Пугачёва',
       description: 'Удмурты активно участвуют в крестьянской войне. Многие деревни поддерживают восставших против крепостного гнёта.',
-      icon: 'Flame'
+      icon: 'Flame',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/02e15eed-3ce9-45be-b574-6edb665ea8dd.jpg'
     },
     { 
       year: '1807', 
       event: 'Основание Ижевского оружейного завода',
       description: 'По указу императора Александра I основан железоделательный завод. Начало промышленной истории региона. Вокруг завода формируется поселение.',
-      icon: 'Factory'
+      icon: 'Factory',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/029d0af1-ea79-4bb1-8b4b-cf5f74d17749.jpg'
     },
     { 
       year: '1835', 
       event: 'Ижевск получает статус города',
       description: 'Заводской посёлок официально становится городом. Развивается оружейное производство, растёт население.',
-      icon: 'Building'
+      icon: 'Building',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/d1bbd5e5-18e8-416c-9e51-3c48c33ae01e.jpg'
     },
     { 
       year: '1918', 
       event: 'Ижевско-Воткинское восстание',
       description: 'Крупнейшее антибольшевистское выступление рабочих Ижевского и Воткинского заводов. Восстание подавлено Красной Армией.',
-      icon: 'Swords'
+      icon: 'Swords',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/3fe3f9e5-40dd-4826-a72f-01b80ac1175a.jpg'
     },
     { 
       year: '1920', 
       event: 'Образование Вотской автономной области',
       description: '4 ноября создана автономия в составе РСФСР с центром в Ижевске. Начало национально-государственного строительства.',
-      icon: 'Map'
+      icon: 'Map',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/a3230531-2d98-4d5d-b2bc-07aa92fd68d2.jpg'
     },
     { 
       year: '1932', 
       event: 'Преобразование в Удмуртскую АССР',
       description: 'Область получает статус автономной республики. Вотяки официально переименованы в удмуртов.',
-      icon: 'Award'
+      icon: 'Award',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/afd115ca-e438-48b1-8ca1-c5d722859d4f.jpg'
     },
     { 
       year: '1941-1945', 
       event: 'Годы Великой Отечественной войны',
       description: 'В республику эвакуировано более 50 предприятий. Ижевск становится крупнейшим центром военной промышленности. На фронт призваны более 260 тысяч человек.',
-      icon: 'Shield'
+      icon: 'Shield',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/2f3e41a4-0c31-447d-9d4f-90c8b24ddb8a.jpg'
     },
     { 
       year: '1947', 
       event: 'Михаил Калашников создаёт АК-47',
       description: 'На Ижевском заводе разработан легендарный автомат Калашникова. Оружие становится символом города и страны.',
-      icon: 'Target'
+      icon: 'Target',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/db3dd18d-f87e-4416-9cd3-82ccd69399d4.jpg'
     },
     { 
       year: '1985', 
       event: 'Строительство метрополитена в Ижевске',
       description: 'Начато строительство первого в Удмуртии метро. Проект заморожен, сохранились незавершённые тоннели.',
-      icon: 'Train'
+      icon: 'Train',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/6512f9d3-fc7e-4bfa-8694-8c9802634b6d.jpg'
     },
     { 
       year: '1991', 
       event: 'Становление Удмуртской Республики',
       description: '20 сентября УАССР преобразована в Удмуртскую Республику в составе РФ. Принята Декларация о государственном суверенитете.',
-      icon: 'Star'
+      icon: 'Star',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/0d1aa44c-2648-46d3-88ef-ec709e45171e.jpg'
     },
     { 
       year: '2007', 
       event: 'Восстановление Александро-Невского собора',
       description: 'После многолетней реставрации открыт главный храм Ижевска, разрушенный в советское время.',
-      icon: 'Church'
+      icon: 'Church',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/eec3ba94-cbe5-4e6d-a1d9-11e9edfe7766.jpg'
     },
     { 
       year: '2020', 
       event: '100-летие Удмуртской государственности',
       description: 'Юбилейный год. Республика отмечает век со дня образования автономии. Современная Удмуртия — промышленный и культурный регион России.',
-      icon: 'PartyPopper'
+      icon: 'PartyPopper',
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/7f8b8247-e240-483c-9eaf-d0841a221c64.jpg'
     },
   ];
 
@@ -393,36 +408,29 @@ const Index = () => {
                   {historyTimeline.map((item, index) => (
                     <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                       <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-12' : 'text-left pl-12'}`}>
-                        <Card className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 group">
+                        <Card className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+                          <div className="relative h-48 overflow-hidden">
+                            <img 
+                              src={item.image} 
+                              alt={item.event}
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div className="absolute bottom-3 left-4 right-4">
+                              <div className="bg-accent text-accent-foreground px-3 py-1 rounded font-cormorant text-lg font-bold inline-block">
+                                {item.year}
+                              </div>
+                            </div>
+                          </div>
                           <CardContent className="p-6">
                             <div className="flex items-center gap-3 mb-3">
-                              {index % 2 === 0 ? (
-                                <>
-                                  <div className="flex-1">
-                                    <div className="bg-accent text-accent-foreground px-4 py-2 rounded font-cormorant text-xl font-bold inline-block">
-                                      {item.year}
-                                    </div>
-                                  </div>
-                                  <div className="bg-primary/10 text-primary p-2 rounded group-hover:scale-110 transition-transform">
-                                    <Icon name={item.icon as any} size={24} />
-                                  </div>
-                                </>
-                              ) : (
-                                <>
-                                  <div className="bg-primary/10 text-primary p-2 rounded group-hover:scale-110 transition-transform">
-                                    <Icon name={item.icon as any} size={24} />
-                                  </div>
-                                  <div className="flex-1">
-                                    <div className="bg-accent text-accent-foreground px-4 py-2 rounded font-cormorant text-xl font-bold inline-block">
-                                      {item.year}
-                                    </div>
-                                  </div>
-                                </>
-                              )}
+                              <div className="bg-primary/10 text-primary p-2 rounded group-hover:scale-110 transition-transform">
+                                <Icon name={item.icon as any} size={24} />
+                              </div>
+                              <h3 className="font-cormorant text-xl font-bold text-primary flex-1">
+                                {item.event}
+                              </h3>
                             </div>
-                            <h3 className="font-cormorant text-2xl font-bold text-primary mb-2">
-                              {item.event}
-                            </h3>
                             <p className="text-muted-foreground font-merriweather leading-relaxed text-sm">
                               {item.description}
                             </p>
