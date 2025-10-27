@@ -120,37 +120,49 @@ const Index = () => {
       title: 'Народные промыслы', 
       description: 'Ткачество, вышивка, плетение из бересты. Удмуртские мастера создают удивительные узоры на тканях, используя традиционные техники, передаваемые из поколения в поколение. Плетение из бересты — особое искусство создания утвари и украшений.', 
       icon: 'Paintbrush',
-      details: ['Традиционная вышивка крестом', 'Узорное ткачество на кроснах', 'Изделия из бересты и лыка']
+      details: ['Традиционная вышивка крестом', 'Узорное ткачество на кроснах', 'Изделия из бересты и лыка'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/a62ec19a-8441-4f1a-8b8d-c857b2dd5bbe.jpg',
+      facts: ['Удмуртские узоры передают космогонические представления народа', 'Каждый символ имеет защитное и обрядовое значение', 'Техники вышивки передаются только от матери к дочери']
     },
     { 
       title: 'Музыкальная культура', 
       description: 'Крезь — удмуртский национальный инструмент, похожий на гусли. Народные песни передают древние легенды и обряды. Традиционный фольклор включает свадебные, обрядовые и лирические песни.', 
       icon: 'Music',
-      details: ['Крезь — струнный щипковый инструмент', 'Чипчирган — свистулька из глины', 'Народный ансамбль «Италмас»']
+      details: ['Крезь — струнный щипковый инструмент', 'Чипчирган — свистулька из глины', 'Народный ансамбль «Италмас»'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/36d77514-b518-446b-97e1-020166a32ed9.jpg',
+      facts: ['Крезь звучит на всех важных обрядах и праздниках', 'Народные песни сохраняют древний удмуртский язык', 'Многоголосное пение — уникальная черта удмуртского фольклора']
     },
     { 
       title: 'Литература', 
       description: 'Кузебай Герд — основоположник удмуртской литературы. Ашальчи Оки — поэтесса, певица удмуртской души. Современная литература на удмуртском языке развивается и сохраняет национальную самобытность.', 
       icon: 'BookOpen',
-      details: ['Кузебай Герд — поэт и фольклорист', 'Ашальчи Оки — классик поэзии', 'Флор Васильев — народный писатель']
+      details: ['Кузебай Герд — поэт и фольклорист', 'Ашальчи Оки — классик поэзии', 'Флор Васильев — народный писатель'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/822989f8-8636-48c7-831b-f4c1b2d29f92.jpg',
+      facts: ['Удмуртская письменность существует с XVIII века', 'Первая удмуртская газета вышла в 1920 году', 'Ежегодно издаётся более 100 книг на удмуртском языке']
     },
     { 
       title: 'Изобразительное искусство', 
       description: 'Живопись, графика, скульптура удмуртских художников отражает красоту родного края и национальный колорит. Декоративно-прикладное искусство включает резьбу по дереву, керамику, национальный костюм.', 
       icon: 'Palette',
-      details: ['Живопись П.А. Ёлкина', 'Скульптура С.Н. Виноградова', 'Удмуртский национальный костюм']
+      details: ['Живопись П.А. Ёлкина', 'Скульптура С.Н. Виноградова', 'Удмуртский национальный костюм'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/2f66f469-d53d-451f-8801-c2fd526be6d6.jpg',
+      facts: ['Удмуртский костюм включает более 200 элементов', 'Цвета костюма отражают социальный статус владельца', 'Национальная одежда шьётся только вручную']
     },
     { 
       title: 'Театр и кино', 
       description: 'Удмуртский государственный национальный театр — центр театрального искусства. Спектакли на удмуртском и русском языках. Развивается национальное кино, документальные фильмы о культуре.', 
       icon: 'Theater',
-      details: ['Удмуртский драмтеатр (основан в 1931)', 'Театр оперы и балета', 'Кинофестиваль финно-угорских народов']
+      details: ['Удмуртский драмтеатр (основан в 1931)', 'Театр оперы и балета', 'Кинофестиваль финно-угорских народов'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/1d3b32a6-b4d8-46ad-aa27-1cd966a8baa8.jpg',
+      facts: ['Театр даёт более 200 спектаклей в год', 'В репертуаре пьесы удмуртских драматургов', 'Кинофестиваль объединяет 15 финно-угорских народов']
     },
     { 
       title: 'Национальная кухня', 
       description: 'Перепечи — традиционные открытые пироги с различными начинками. Табани — блины из пресного теста. Шаньги, пельняни и другие блюда отражают кулинарное наследие удмуртов.', 
       icon: 'UtensilsCrossed',
-      details: ['Перепечи с картофелем и мясом', 'Табани — удмуртские блины', 'Шаньги с творогом и сметаной']
+      details: ['Перепечи с картофелем и мясом', 'Табани — удмуртские блины', 'Шаньги с творогом и сметаной'],
+      image: 'https://cdn.poehali.dev/projects/eec150a6-5362-4e2d-bca6-86253f50c501/files/ece8e4b0-5b16-4285-beca-96cd15c71634.jpg',
+      facts: ['Перепечи готовятся только в особой печи', 'Каждый регион Удмуртии имеет свой рецепт табани', 'Национальные блюда обязательны на всех праздниках']
     },
   ];
 
@@ -454,17 +466,55 @@ const Index = () => {
             <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-primary mb-8 text-center">
               Культурное наследие
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {culturalElements.map((item, index) => (
-                <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-xl transition-all duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="bg-accent text-accent-foreground p-3 rounded">
+                <Card key={index} className="border-2 border-border hover:border-accent hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+                  <div className="relative h-56 overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3">
+                      <div className="bg-accent text-accent-foreground p-3 rounded shadow-lg">
                         <Icon name={item.icon as any} size={28} />
                       </div>
-                      <h3 className="font-cormorant text-2xl font-bold text-primary flex-1">{item.title}</h3>
+                      <h3 className="font-cormorant text-2xl font-bold text-white flex-1">{item.title}</h3>
                     </div>
-                    <p className="text-muted-foreground font-merriweather leading-relaxed">{item.description}</p>
+                  </div>
+                  <CardContent className="p-6">
+                    <p className="text-muted-foreground font-merriweather leading-relaxed text-sm mb-4">{item.description}</p>
+                    
+                    <div className="space-y-3 mb-4">
+                      <h4 className="font-cormorant text-lg font-bold text-primary flex items-center gap-2">
+                        <Icon name="Star" size={18} className="text-accent" />
+                        Ключевые элементы
+                      </h4>
+                      <ul className="space-y-2">
+                        {item.details.map((detail, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm">
+                            <Icon name="ChevronRight" size={16} className="text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-muted-foreground">{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-border">
+                      <h4 className="font-cormorant text-lg font-bold text-primary mb-3 flex items-center gap-2">
+                        <Icon name="Sparkles" size={18} className="text-accent" />
+                        Интересные факты
+                      </h4>
+                      <div className="space-y-2">
+                        {item.facts.map((fact, idx) => (
+                          <div key={idx} className="flex items-start gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                            <p className="text-xs text-muted-foreground leading-relaxed">{fact}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
