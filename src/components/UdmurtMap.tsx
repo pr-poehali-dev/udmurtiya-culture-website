@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Icon } from 'leaflet';
+import { Icon as LeafletIcon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import Icon from '@/components/ui/icon';
 
@@ -54,7 +54,7 @@ const landmarks = [
   }
 ];
 
-const customIcon = new Icon({
+const customIcon = new LeafletIcon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
